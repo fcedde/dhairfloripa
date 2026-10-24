@@ -133,11 +133,11 @@ section{position:relative}
 .strip .pill svg{width:21px;height:21px;color:var(--orange);flex:none}
 
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;transition:.25s;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(40,25,15,.04)}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;transition:.25s;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(40,25,15,.04);text-align:center}
 .svc::before{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--grad);transition:.35s}
 .svc:hover{transform:translateY(-5px);border-color:var(--line2);box-shadow:0 12px 28px rgba(40,25,15,.08)}
 .svc:hover::before{width:100%}
-.svc .ico{width:54px;height:54px;border-radius:13px;display:grid;place-items:center;background:radial-gradient(120% 120% at 30% 20%,rgba(245,166,35,.18),rgba(232,90,122,.06));border:1px solid var(--line2);margin-bottom:18px}
+.svc .ico{width:54px;height:54px;border-radius:13px;display:grid;place-items:center;background:radial-gradient(120% 120% at 30% 20%,rgba(229,169,163,.22),rgba(229,169,163,.06));border:1px solid var(--line2);margin:0 auto 18px}
 .svc .ico svg{width:27px;height:27px;color:var(--orange)}
 .svc h3{font-size:1.22rem;font-weight:700;margin-bottom:8px;color:var(--ink)}
 .svc p{color:var(--muted);font-size:.97rem}
@@ -161,7 +161,7 @@ section{position:relative}
 .diff .ico svg{width:25px;height:25px;color:var(--orange)}
 
 .promo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:0;align-items:stretch;background:var(--card);border:1px solid var(--line2);border-radius:24px;overflow:hidden;box-shadow:0 4px 20px rgba(40,25,15,.05)}
-.promo .media{position:relative;min-height:280px;background:var(--bg3);display:grid;place-items:center;align-self:stretch}
+.promo .media{position:relative;min-height:280px;width:100%;max-width:100%;background:var(--bg3);display:block;align-self:stretch;overflow:hidden}
 .promo .media img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0}
 .promo .media .placeholder{color:var(--muted);text-align:center;padding:20px;position:relative;z-index:1}
 .promo .body{padding:clamp(28px,4vw,48px) clamp(22px,3.5vw,44px);min-width:0;display:flex;flex-direction:column;justify-content:center;gap:0}
@@ -298,9 +298,11 @@ section{position:relative}
 /* Avaliações — nota */
 .aval-nota{display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:2.2rem;text-align:center}
 .aval-top{display:flex;align-items:center;justify-content:center;gap:12px}
-.aval-num{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,6vw,3.2rem);line-height:1;color:var(--orange);font-weight:800;margin:0}
-.estrelas{display:flex;gap:3px;align-items:center}
+.aval-num{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,6vw,3.2rem);line-height:1;color:var(--orange);font-weight:800;margin:0;display:flex;align-items:center}
+.estrelas{display:flex;gap:3px;align-items:center;line-height:1}
 .estrelas svg{width:18px;height:18px;fill:var(--orange);flex:none}
+.aval-top .estrelas{transform:translateY(3px)}
+.aval-top .estrelas svg{width:22px;height:22px}
 .aval-nota > p,.aval-sub{font-size:.95rem;color:var(--muted);margin:0;line-height:1.35}
 .av-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
 .av{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px 22px;display:grid;grid-template-rows:auto 1fr auto;gap:14px;transition:.25s;box-shadow:0 2px 12px rgba(40,25,15,.04)}
@@ -366,11 +368,11 @@ footer{background:var(--gray);border-top:none;padding:56px 0 28px;color:#fff}
 .grid{grid-template-columns:repeat(2,1fr)}
 .feature{grid-template-columns:1fr;gap:30px}
 .feature .media{order:-1}
-.promo{grid-template-columns:1fr}.promo .media{min-height:220px;aspect-ratio:16/10;order:-1}.promo .body{padding:28px 22px}.promo .body .btn{width:auto;align-self:flex-start;justify-content:center}
+.promo{grid-template-columns:1fr}.promo .media{min-height:220px;width:100%;aspect-ratio:16/10;order:-1;margin:0;padding:0}.promo .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.promo .body{padding:28px 22px}.promo .body .btn{width:auto;align-self:flex-start;justify-content:center}
 .diff-grid{grid-template-columns:1fr}
 .loc{grid-template-columns:1fr}
 .gallery{grid-template-columns:1fr}
-.foot-grid{grid-template-columns:1fr 1fr;gap:30px}
+.foot-grid{grid-template-columns:1fr;gap:28px}
 .nav-links .lnk{display:none}
 .menu-toggle{display:grid;place-items:center}
 .nav .btn-wa{display:none}
@@ -378,7 +380,7 @@ footer{background:var(--gray);border-top:none;padding:56px 0 28px;color:#fff}
 .nav{height:88px}
 .mobile-nav{top:88px}
 }
-@media(max-width:700px){.diff-grid{grid-template-columns:1fr}.promo{grid-template-columns:1fr}.promo .media{min-height:200px;aspect-ratio:16/10;order:-1}.promo .body{padding:26px 20px}.promo h2{font-size:clamp(1.4rem,5vw,2rem)}.promo p{font-size:1rem}.promo .body .btn{width:auto;align-self:flex-start;justify-content:center}}
+@media(max-width:700px){.diff-grid{grid-template-columns:1fr}.promo{grid-template-columns:1fr}.promo .media{min-height:200px;width:100%;aspect-ratio:16/10;order:-1;margin:0;padding:0}.promo .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.promo .body{padding:26px 20px}.promo h2{font-size:clamp(1.4rem,5vw,2rem)}.promo p{font-size:1rem}.promo .body .btn{width:auto;align-self:flex-start;justify-content:center}}
 @media(max-width:560px){
 .grid{grid-template-columns:1fr}
 .diff-grid{grid-template-columns:1fr}
@@ -440,10 +442,6 @@ Agendar pelo WhatsApp
 <div class="m-info">
 Rua Rafael Bandeira, 115 — Centro, Florianópolis - SC<br>
 <a href="https://wa.me/5548974009664?text=Hi%21%20I%27m%20coming%20through%20the%20D.Hair%20website%20and%20would%20like%20to%20book%20an%20appointment.">(48) 97400-9664</a>
-<div style="margin-top:12px">
-<a href="index.html" style="margin-right:12px;font-weight:600;color:var(--muted)">PT</a>
-<a href="index-en.html" style="font-weight:700;color:var(--orange)">EN</a>
-</div>
 </div>
 </nav>
 
@@ -707,7 +705,7 @@ See more on Instagram
 <div class="aval-nota reveal">
 <div class="aval-top">
 <div class="aval-num">4.4</div>
-<div class="estrelas" role="img" aria-label="Five stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.28 5.53.72-4.06 3.9 1.05 5.66L10 14.5l-5 2.66 1.05-5.66L2 7.6l5.53-.72z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.28 5.53.72-4.06 3.9 1.05 5.66L10 14.5l-5 2.66 1.05-5.66L2 7.6l5.53-.72z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.28 5.53.72-4.06 3.9 1.05 5.66L10 14.5l-5 2.66 1.05-5.66L2 7.6l5.53-.72z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.28 5.53.72-4.06 3.9 1.05 5.66L10 14.5l-5 2.66 1.05-5.66L2 7.6l5.53-.72z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.28 5.53.72-4.06 3.9 1.05 5.66L10 14.5l-5 2.66 1.05-5.66L2 7.6l5.53-.72z"/></svg></div>
+<div class="estrelas" role="img" aria-label="Five stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.28 5.53.72-4.06 3.9 1.05 5.66L10 14.5l-5 2.66 1.05-5.66L2 7.6l5.53-.72z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.28 5.53.72-4.06 3.9 1.05 5.66L10 14.5l-5 2.66 1.05-5.66L2 7.6l5.53-.72z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.28 5.53.72-4.06 3.9 1.05 5.66L10 14.5l-5 2.66 1.05-5.66L2 7.6l5.53-.72z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.28 5.53.72-4.06 3.9 1.05 5.66L10 14.5l-5 2.66 1.05-5.66L2 7.6l5.53-.72z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><defs><linearGradient id="halfStar"><stop offset="50%" stop-color="#E5A9A3"/><stop offset="50%" stop-color="#E8E4E3"/></linearGradient></defs><path fill="url(#halfStar)" d="M10 1.6l2.47 5.28 5.53.72-4.06 3.9 1.05 5.66L10 14.5l-5 2.66 1.05-5.66L2 7.6l5.53-.72z"/></svg></div>
 </div>
 <p class="aval-sub">From 61 Google reviews</p>
 </div>
@@ -830,9 +828,9 @@ Agendar pelo WhatsApp
 
 <footer>
 <div class="wrap">
-<div class="foot-grid" style="grid-template-columns:1.5fr 1fr 1fr;gap:40px">
+<div class="foot-grid">
 <div class="foot-brand">
-<span class="logo-chip" style="display:inline-flex"><img src="logo-dhair.png" alt="D.Hair" class="logo-img" style="height:110px;max-height:110px"></span>
+<a href="#top" class="logo-chip" style="display:inline-flex" aria-label="D.Hair"><img src="logo-dhair.png" alt="D.Hair" class="logo-img" style="height:110px;max-height:110px"></a>
 <p><strong>D.Hair</strong> — Specialists in enhancing your natural beauty. Hair, nails, makeup, lashes, brows and waxing in Centro, Florianópolis.</p>
 </div>
 <div class="foot-col">
