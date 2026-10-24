@@ -61,10 +61,10 @@ img{max-width:100%;display:block}
 
 /* Header */
 header{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--gray);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.1);transition:.3s}
-.nav{display:flex;align-items:center;justify-content:space-between;height:88px}
+.nav{display:flex;align-items:center;justify-content:space-between;height:100px}
 .brand{display:flex;align-items:center;gap:11px}
 .logo-chip{background:transparent;border-radius:11px;padding:0;display:inline-flex;align-items:center;border:none;overflow:visible}
-.logo-img{height:72px;width:auto;display:block;max-height:72px}
+.logo-img{height:88px;width:auto;display:block;max-height:88px}
 .nav-links{display:flex;align-items:center;gap:26px}
 .nav-links a.lnk{font-weight:600;font-size:.94rem;color:rgba(255,255,255,.8);transition:.2s}
 .nav-links a.lnk:hover{color:#fff}
@@ -83,7 +83,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--gray);bac
 .menu-toggle.is-open .icon-close{display:block}
 
 .mobile-nav{
-  position:fixed;top:88px;left:0;right:0;bottom:0;
+  position:fixed;top:100px;left:0;right:0;bottom:0;
   background:var(--gray);backdrop-filter:blur(18px);
   z-index:45;padding:28px 22px 40px;
   display:flex;flex-direction:column;gap:8px;
@@ -373,9 +373,9 @@ footer{background:var(--gray);border-top:none;padding:56px 0 28px;color:#fff}
 .nav-links .lnk{display:none}
 .menu-toggle{display:grid;place-items:center}
 .nav .btn-wa{display:none}
-.logo-img{height:60px;max-height:60px}
-.nav{height:76px}
-.mobile-nav{top:76px}
+.logo-img{height:72px;max-height:72px}
+.nav{height:88px}
+.mobile-nav{top:88px}
 }
 @media(max-width:700px){.diff-grid{grid-template-columns:1fr}.promo{grid-template-columns:1fr}.promo .media{min-height:200px;aspect-ratio:16/10;order:-1}.promo .body{padding:26px 20px}.promo h2{font-size:clamp(1.4rem,5vw,2rem)}.promo p{font-size:1rem}.promo .body .btn{width:auto;align-self:flex-start;justify-content:center}}
 @media(max-width:560px){
@@ -386,9 +386,9 @@ footer{background:var(--gray);border-top:none;padding:56px 0 28px;color:#fff}
 .cta-band{padding:40px 22px}.cta-outer{padding:62px 0}
 .foot-grid{grid-template-columns:1fr}
 .hero{padding-top:100px;padding-bottom:54px}
-.logo-img{height:52px;max-height:52px}
-.nav{height:68px}
-.mobile-nav{top:68px}
+.logo-img{height:64px;max-height:64px}
+.nav{height:78px}
+.mobile-nav{top:78px}
 .hero-inner{max-width:100%;margin:0 auto;text-align:center}
 .hero p.sub{margin-left:auto;margin-right:auto}
 .hero-cta{justify-content:center}
@@ -402,7 +402,7 @@ footer{background:var(--gray);border-top:none;padding:56px 0 28px;color:#fff}
 <header id="top">
 <div class="wrap nav">
 <a href="#top" class="brand" aria-label="D.Hair — Salão de Beleza no Centro, Florianópolis">
-<span class="logo-chip"><img src="logo-dhair.jpeg" alt="D.Hair" class="logo-img"></span>
+<span class="logo-chip"><img src="logo-dhair.png" alt="D.Hair" class="logo-img"></span>
 </a>
 <nav class="nav-links" aria-label="Menu principal">
 <a href="#sobre" class="lnk">O Salão</a>
@@ -410,7 +410,7 @@ footer{background:var(--gray);border-top:none;padding:56px 0 28px;color:#fff}
 <a href="#trabalho" class="lnk">Nosso Trabalho</a>
 <a href="#agendar" class="lnk">Agendar</a>
 <a href="#contato" class="lnk">Contato</a>
-<a href="https://wa.me/5548974009664?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20D.Hair%20e%20quero%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa" target="_blank" rel="noopener">
+<a href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa" target="_blank" rel="noopener">
 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.913zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
 Agendar
 </a>
@@ -432,13 +432,13 @@ Agendar
 <a href="#trabalho" class="mlnk">Nosso Trabalho</a>
 <a href="#agendar" class="mlnk">Agendar</a>
 <a href="#contato" class="mlnk">Contato</a>
-<a href="https://wa.me/5548974009664?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20D.Hair%20e%20quero%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa m-wa" target="_blank" rel="noopener">
+<a href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa m-wa" target="_blank" rel="noopener">
 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.913zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
 Agendar pelo WhatsApp
 </a>
 <div class="m-info">
 Rua Rafael Bandeira, 115 — Centro, Florianópolis - SC<br>
-<a href="https://wa.me/5548974009664">(48) 97400-9664</a>
+<a href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.">(48) 97400-9664</a>
 <div style="margin-top:12px">
 <a href="index.html" style="margin-right:12px;font-weight:700;color:var(--orange)">PT</a>
 <a href="index-en.html" style="font-weight:600;color:var(--muted)">EN</a>
@@ -454,7 +454,7 @@ Rua Rafael Bandeira, 115 — Centro, Florianópolis - SC<br>
 <h1>Especialistas em realçar sua <span class="grad-text">beleza natural</span></h1>
 <p class="sub">Cabelo, unhas, maquiagem e depilação — o <span class="grad-text" style="font-weight:700">D.Hair</span> reúne tudo em um só lugar no Centro de Florianópolis, com profissionais especializados e um ambiente acolhedor.</p>
 <div class="hero-cta">
-<a href="https://wa.me/5548974009664?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20D.Hair%20e%20quero%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa" target="_blank" rel="noopener">
+<a href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa" target="_blank" rel="noopener">
 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.913zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
 Quero essa experiência
 </a>
@@ -476,7 +476,7 @@ Quero essa experiência
 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Agendamento fácil pelo WhatsApp</li>
 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Mais de 1.500 trabalhos no @dhairr</li>
 </ul>
-<a href="https://wa.me/5548974009664?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20no%20D.Hair." class="btn btn-wa" target="_blank" rel="noopener">
+<a href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa" target="_blank" rel="noopener">
 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.913zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
 Tirar dúvidas
 </a>
@@ -527,7 +527,7 @@ Tirar dúvidas
 <span class="eyebrow">Transformações &amp; cuidados</span>
 <h2>O seu momento de beleza começa aqui</h2>
 <p>Preparação completa para o seu dia: <b>corte</b>, <b>cor</b>, <b>tratamentos</b>, <b>unhas</b> e <b>make</b> no mesmo lugar, com hora marcada e uma equipe cuidando de você.</p>
-<a href="https://wa.me/5548974009664?text=Ol%C3%A1!%20Quero%20agendar%20uma%20transforma%C3%A7%C3%A3o%20no%20D.Hair." class="btn btn-wa" target="_blank" rel="noopener">
+<a href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa" target="_blank" rel="noopener">
 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.913zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
 Agendar
 </a>
@@ -717,7 +717,7 @@ Ver mais no Instagram
 </article>
 </div>
 <div class="aval-pe reveal">
-<a class="btn btn-ghost" href="https://www.google.com/maps/place/D.Hair/@-27.58736699897167,-48.54781649323322,17z" target="_blank" rel="noopener">Ver todas no Google</a>
+<a class="btn btn-ghost" href="https://maps.app.goo.gl/P16wdw35eYDrTk1J9" target="_blank" rel="noopener">Ver todas no Google</a>
 </div>
 </div>
 </section>
@@ -739,7 +739,7 @@ Ver mais no Instagram
 <svg class="ag-ico" viewBox="0 0 32 32" fill="currentColor"><path d="M16.004 3C9.383 3 4 8.383 4 15.004c0 2.385.72 4.6 1.95 6.44L4.5 28.5l7.25-1.42A11.95 11.95 0 0016.004 27C22.625 27 28 21.617 28 15.004 28 8.383 22.625 3 16.004 3zm0 21.75a9.68 9.68 0 01-4.95-1.36l-.35-.21-3.54.93.95-3.45-.23-.36a9.7 9.7 0 01-1.5-5.25c0-5.37 4.37-9.74 9.74-9.74s9.74 4.37 9.74 9.74-4.37 9.74-9.74 9.74zm5.34-7.28c-.29-.15-1.73-.85-2-.95-.27-.1-.46-.15-.66.15-.2.29-.76.95-.93 1.14-.17.2-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.08-.15-.66-1.58-.9-2.16-.24-.57-.48-.49-.66-.5h-.56c-.2 0-.52.07-.79.37s-1.04 1.01-1.04 2.47 1.06 2.86 1.21 3.06c.15.2 2.09 3.19 5.06 4.47.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.75-.72 2-1.4.25-.69.25-1.28.17-1.4-.07-.12-.27-.2-.56-.35z"/></svg>
 <h3>WhatsApp</h3>
 <p>Toque no botão e fale direto com o salão. É o jeito mais rápido de agendar.</p>
-<a class="btn btn-wa" href="https://wa.me/5548974009664?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20D.Hair%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+<a class="btn btn-wa" href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Chamar no WhatsApp</a>
 </div>
 </div>
 </div>
@@ -758,11 +758,11 @@ Ver mais no Instagram
 <div class="info-list reveal">
 <div class="info-row">
 <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-<div class="t"><b>Endereço</b><span>Rua Rafael Bandeira, 115 — Centro, Florianópolis - SC, CEP 88015-450<br><a href="https://www.google.com/maps/place/D.Hair/@-27.58736699897167,-48.54781649323322,17z" target="_blank" rel="noopener">Ver no Google Maps →</a></span></div>
+<div class="t"><b>Endereço</b><span>Rua Rafael Bandeira, 115 — Centro, Florianópolis - SC, CEP 88015-450<br><a href="https://maps.app.goo.gl/P16wdw35eYDrTk1J9" target="_blank" rel="noopener">Ver no Google Maps →</a></span></div>
 </div>
 <div class="info-row">
 <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></div>
-<div class="t"><b>WhatsApp</b><span><a href="https://wa.me/5548974009664" target="_blank" rel="noopener">(48) 97400-9664</a></span></div>
+<div class="t"><b>WhatsApp</b><span><a href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">(48) 97400-9664</a></span></div>
 </div>
 <div class="info-row">
 <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
@@ -772,7 +772,7 @@ Ver mais no Instagram
 <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></div>
 <div class="t"><b>Instagram</b><span><a href="https://www.instagram.com/dhairr/" target="_blank" rel="noopener">@dhairr</a> — +1.500 trabalhos</span></div>
 </div>
-<a href="https://wa.me/5548974009664?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20D.Hair%20e%20quero%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa btn-wa-sm" target="_blank" rel="noopener">
+<a href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa btn-wa-sm" target="_blank" rel="noopener">
 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.913zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
 Agendar pelo WhatsApp
 </a>
@@ -788,7 +788,7 @@ Agendar pelo WhatsApp
 <span class="eyebrow">Dúvidas</span>
 <h2>Perguntas frequentes</h2>
 <p>Se a sua não estiver aqui, chame no WhatsApp que a gente responde.</p>
-<a class="btn btn-wa" href="https://wa.me/5548974009664?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20D.Hair%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Falar com o salão</a>
+<a class="btn btn-wa" href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Falar com o salão</a>
 </div>
 <div class="duv reveal">
 <details>
@@ -820,7 +820,7 @@ Agendar pelo WhatsApp
 <div class="wrap">
 <div class="foot-grid" style="grid-template-columns:1.5fr 1fr 1fr;gap:40px">
 <div class="foot-brand">
-<span class="logo-chip" style="display:inline-flex"><img src="logo-dhair.jpeg" alt="D.Hair" class="logo-img" style="height:90px;max-height:90px"></span>
+<span class="logo-chip" style="display:inline-flex"><img src="logo-dhair.png" alt="D.Hair" class="logo-img" style="height:110px;max-height:110px"></span>
 <p><strong>D.Hair</strong> — Especialistas em realçar sua beleza natural. Cabelos, unhas, maquiagem e depilação no Centro de Florianópolis.</p>
 </div>
 <div class="foot-col">
@@ -830,13 +830,13 @@ Agendar pelo WhatsApp
 </div>
 <div class="foot-col">
 <h4>Contato</h4>
-<a href="https://wa.me/5548974009664" target="_blank" rel="noopener">WhatsApp (48) 97400-9664</a>
+<a href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">WhatsApp (48) 97400-9664</a>
 <a href="https://www.instagram.com/dhairr/" target="_blank" rel="noopener">@dhairr</a>
-<a href="https://www.google.com/maps/place/D.Hair/@-27.58736699897167,-48.54781649323322,17z" target="_blank" rel="noopener">Ver no Google Maps</a>
+<a href="https://maps.app.goo.gl/P16wdw35eYDrTk1J9" target="_blank" rel="noopener">Ver no Google Maps</a>
 <div class="social">
 <a href="https://www.instagram.com/dhairr/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
-<a href="https://www.google.com/maps/place/D.Hair/@-27.58736699897167,-48.54781649323322,17z" target="_blank" rel="noopener" aria-label="Google Maps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
-<a href="https://wa.me/5548974009664" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.913zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+<a href="https://maps.app.goo.gl/P16wdw35eYDrTk1J9" target="_blank" rel="noopener" aria-label="Google Maps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
+<a href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.913zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
 </div>
 </div>
 </div>
@@ -847,7 +847,7 @@ Agendar pelo WhatsApp
 </div>
 </footer>
 
-<a href="https://wa.me/5548974009664?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20D.Hair%20e%20quero%20agendar%20um%20hor%C3%A1rio." class="fab" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+<a href="https://wa.me/5548974009664?text=Ol%C3%A1%21%20Venho%20atrav%C3%A9s%20do%20site%20da%20D.Hair%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="fab" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.913zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
 </a>
 
