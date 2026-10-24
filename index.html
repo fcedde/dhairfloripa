@@ -366,7 +366,7 @@ footer{background:var(--gray);border-top:none;padding:56px 0 28px;color:#fff}
 @media(min-width:769px){.hero-inner{max-width:min(75vw,1100px)}}
 @media(max-width:900px){
 .grid{grid-template-columns:repeat(2,1fr)}
-.feature{grid-template-columns:1fr;gap:30px}
+.feature{grid-template-columns:1fr;gap:30px;text-align:center}
 .feature .media{order:-1}
 .promo{grid-template-columns:1fr}.promo .media{min-height:220px;width:100%;aspect-ratio:16/10;order:-1;margin:0;padding:0}.promo .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.promo .body{padding:28px 22px}.promo .body .btn{width:auto;align-self:flex-start;justify-content:center}
 .diff-grid{grid-template-columns:1fr}
@@ -398,13 +398,114 @@ footer{background:var(--gray);border-top:none;padding:56px 0 28px;color:#fff}
 .hero-cta .btn{flex:0 1 auto;white-space:nowrap;justify-content:center;padding:13px 18px;font-size:.95rem}
 .hero-trust{justify-content:center;gap:12px 18px}
 }
+/* mobile-center */
+
+@media(max-width:900px){
+  .sec-head,
+  .sec-head.center,
+  .feature,
+  .feature > div,
+  .promo .body,
+  .agendar-text,
+  .agendar-card,
+  .duv-lado,
+  .duv,
+  .info-list,
+  .foot-brand,
+  .foot-col,
+  .aval-pe,
+  .cta-band,
+  .checks,
+  .agendar-list{
+    text-align:center;
+  }
+  .sec-head p,
+  .feature p,
+  .promo .body p,
+  .agendar-text p,
+  .duv-lado p,
+  .foot-brand p{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .checks,
+  .agendar-list{
+    justify-items:center;
+  }
+  .checks li,
+  .agendar-list li{
+    justify-content:center;
+    text-align:center;
+  }
+  .feature .btn,
+  .promo .body .btn,
+  .agendar-card .btn,
+  .agendar-text .btn,
+  .duv-lado .btn,
+  .info-list .btn,
+  .info-list .btn-wa-sm,
+  .cta-band .btn{
+    margin-left:auto;
+    margin-right:auto;
+    align-self:center;
+    justify-content:center;
+  }
+  .info-list{
+    justify-items:center;
+  }
+  .info-row{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+  .info-row .t{
+    text-align:center;
+  }
+  .foot-grid{
+    grid-template-columns:1fr !important;
+    gap:28px;
+    text-align:center;
+  }
+  .foot-brand,
+  .foot-col{
+    text-align:center;
+  }
+  .foot-brand .logo-chip,
+  .foot-brand a.logo-chip{
+    margin-left:auto;
+    margin-right:auto;
+    justify-content:center;
+  }
+  .social{
+    justify-content:center;
+  }
+  .agendar-box{
+    text-align:center;
+  }
+  .agendar-card{
+    align-items:center;
+  }
+  .agendar-list li{
+    justify-content:center;
+  }
+  .duv summary{
+    text-align:left;
+  }
+  .tagimg{
+    left:50%;
+    transform:translateX(-50%);
+    right:auto;
+  }
+}
+
 </style>
 </head>
 <body>
+<div id="page-top" aria-hidden="true" style="position:absolute;top:0;left:0;width:0;height:0;overflow:hidden"></div>
 
-<header id="top">
+<header id="site-header">
 <div class="wrap nav">
-<a href="#top" class="brand" aria-label="D.Hair — Salão de Beleza no Centro, Florianópolis">
+<a href="#page-top" class="brand" aria-label="D.Hair — Salão de Beleza no Centro, Florianópolis">
 <span class="logo-chip"><img src="logo-dhair.png" alt="D.Hair" class="logo-img"></span>
 </a>
 <nav class="nav-links" aria-label="Menu principal">
@@ -830,7 +931,7 @@ Agendar pelo WhatsApp
 <div class="wrap">
 <div class="foot-grid">
 <div class="foot-brand">
-<a href="#top" class="logo-chip" style="display:inline-flex" aria-label="D.Hair"><img src="logo-dhair.png" alt="D.Hair" class="logo-img" style="height:110px;max-height:110px"></a>
+<a href="#page-top" class="logo-chip" style="display:inline-flex" aria-label="D.Hair"><img src="logo-dhair.png" alt="D.Hair" class="logo-img" style="height:110px;max-height:110px"></a>
 <p><strong>D.Hair</strong> — Especialistas em realçar sua beleza natural. Cabelos, unhas, maquiagem, cílios, sobrancelhas e depilação no Centro de Florianópolis.</p>
 </div>
 <div class="foot-col">
@@ -875,6 +976,15 @@ function setMenu(open){toggle.classList.toggle('is-open',open);mobileNav.classLi
 toggle.addEventListener('click',()=>setMenu(!toggle.classList.contains('is-open')));
 mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
 addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+
+document.querySelectorAll('a[href="#page-top"]').forEach(function(a){
+  a.addEventListener('click', function(e){
+    e.preventDefault();
+    window.scrollTo({top:0, behavior:'smooth'});
+    history.replaceState(null, '', '#page-top');
+  });
+});
+
 </script>
 </body>
 </html>
